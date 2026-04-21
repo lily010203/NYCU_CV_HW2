@@ -100,7 +100,6 @@ Final strong single-stage model:
 
 Best validation result of the strongest model:
 
-- **Model:** v6 single-stage
 - **Best epoch:** 5
 - **mAP@0.5:0.95:** **0.4435**
 - **mAP@0.5:** **0.8889**
@@ -119,7 +118,7 @@ Best final leaderboard result:
 |---|---:|---:|
 | Deformable-DETR-inspired baseline | 0.4193 | about 0.32 |
 | 4-level feature model | 0.4270 | about 0.35 |
-| v6 single-stage | **0.4435** | **0.36** |
+| single-stage (4-level + 4D anchor) | **0.4435** | **0.36** |
 
 ---
 
