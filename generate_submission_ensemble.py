@@ -7,7 +7,7 @@ import torch
 from PIL import Image
 from tqdm.auto import tqdm
 
-from Deformable_Detr_Digit_Detection_v6 import (
+from Deformable_Detr import (
     DeformableDETR,
     IMAGE_SIZE_STAGE1,
     NUM_CLASSES,
