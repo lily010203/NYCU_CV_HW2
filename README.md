@@ -1,8 +1,9 @@
 # HW2: Digit detection with improved DETR variants
+313554063 劉霈琳
 
 ## Introduction
 
-This project studies house number digit detection in natural images. The main challenge is that the target digits are often small, blurred, and placed very close to each other. To address this problem, I started from a DETR-style detector and gradually improved the model with a Deformable-DETR-inspired design.
+This project studies digit detection in natural images. The main challenge is that the target digits are often small, blurred, and placed very close to each other. To address this problem, I started from a DETR-style detector and gradually improved the model with a Deformable-DETR-inspired design.
 
 The final main direction is a **single-stage detector with 4-level multi-scale features and DAB-style 4D anchor references**. In addition to model-side improvements, I also tested inference-time strategies such as TTA, WBF, and NMS-based ensembling.
 
@@ -33,8 +34,6 @@ pip install torch torchvision torchaudio
 pip install numpy scipy pillow tqdm matplotlib pycocotools
 ```
 
-If needed, install Jupyter / notebook related packages separately.
-
 ### 3. Dataset structure
 
 The code assumes the following directory structure:
@@ -51,8 +50,6 @@ NYCU_CV_HW2/
 ├── generate_submission_ensemble.py
 └── ...
 ```
-
-Please adjust `PROJECT_ROOT` and `DATA_ROOT` in the code if your paths are different.
 
 ---
 
@@ -76,8 +73,6 @@ This script will:
 - generate prediction json files for submission
 
 ### 2. Generate submission files
-
-Example scripts used during experiments include:
 
 - `generate_submission_ensemble.py`
 
