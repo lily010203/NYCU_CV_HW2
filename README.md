@@ -1,6 +1,4 @@
-# NYCU_CV_HW2
-
-House number digit detection with improved DETR variants for NYCU Computer Vision Homework 2.
+# HW2: Digit detection with improved DETR variants
 
 ## Introduction
 
@@ -49,9 +47,8 @@ NYCU_CV_HW2/
 │   ├── test/
 │   ├── train.json
 │   └── valid.json
-├── Deformable_Detr_Digit_Detection_v2.py
-├── Deformable_Detr_Digit_Detection_v5.py
-├── Deformable_Detr_Digit_Detection_v6_single_stage.py
+├── Deformable_Detr.py
+├── generate_submission_ensemble.py
 └── ...
 ```
 
@@ -66,7 +63,7 @@ Please adjust `PROJECT_ROOT` and `DATA_ROOT` in the code if your paths are diffe
 The final cleaned training version is:
 
 ```bash
-python Deformable_Detr_Digit_Detection_v6_single_stage.py
+python Deformable_Detr.py
 ```
 
 This script will:
@@ -82,15 +79,7 @@ This script will:
 
 Example scripts used during experiments include:
 
-- `generate_submission_v2_tta_wbf.py`
-- `generate_submission_v6_tta_wbf.py`
-- `generate_submission_v6_epoch456_ensemble_tta_nms.py`
-
-Example:
-
-```bash
-python generate_submission_v6_epoch456_ensemble_tta_nms.py
-```
+- `generate_submission_ensemble.py`
 
 ### 3. Main experimental settings
 
@@ -128,7 +117,7 @@ Best final leaderboard result:
 
 - **Pipeline:** epoch 4 + 5 + 6 ensemble + TTA + NMS
 - **Public score:** **0.36**
-
+![prediction score(public)](Performance_Snapshot.png)
 ### Summary of major experiments
 
 | Setting | Best valid mAP@0.5:0.95 | Public leaderboard |
